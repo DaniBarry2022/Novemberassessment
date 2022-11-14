@@ -6,6 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="myscripts.js"></script>
 <html>
 <head><h1><strong><center>Booking Details</center></strong> </h1>
 <title>Travel booking form</title>
@@ -18,10 +19,11 @@
     
         <br>
         <input type="radio"
-               name="One Way" 
+               name="One" 
                value="One Way">One way
+
                 <input type="radio"
-               name="Round trip" 
+               name="One" 
                value="One Way">Round trip
      <br>
      <br>
@@ -32,6 +34,7 @@
      <input type="date" id="Departure" name="Departure"
             value="--"
             min="--" max="--">
+
  
             <label for="Depart">Return Date:</label>
 
@@ -50,15 +53,16 @@
 
 <h4><strong>Passenger 1 details</strong> </h4>
 
-Name: <input type = "text" name = "full_name" value = "" maxlength = "5" />
+Name: <input type = "text" Id="name" name = "full_name" pattern="[a-zA-Z]{5,}" title="Please emter more than 5 characters"/>
+
 &nbsp;
 &nbsp;
 Gender:
 <input type="radio"
-               name="Male" 
+               name="gender" 
                value="Male">Male
                 <input type="radio"
-               name="Female" 
+               name="gender" 
                value="Female">Female
                &nbsp;
                &nbsp;
@@ -66,15 +70,15 @@ Age:<input type="number" id="quantity" name="quantity" min="0" max="100">
 
 <h4><strong>Passenger 2 details</strong> </h4>
 
-Name: <input type = "text" name = "full_name" value = "" maxlength = "5" />
+Name: <input type = "text" name = "full_name" pattern="[a-zA-Z]{5,}" title="Please enter more than 5 characters" />
 &nbsp;
 &nbsp;
 Gender:
 <input type="radio"
-               name="Male" 
+               name="gender" 
                value="Male">Male
                 <input type="radio"
-               name="Female" 
+               name="gender" 
                value="Female">Female
                &nbsp;
                &nbsp;
@@ -83,20 +87,25 @@ Age:<input type="number" id="quantity" name="quantity" min="0" max="100">
 
 <h4><strong>Passenger 3 details</strong> </h4>
 
-Name: <input type = "text" name = "full_name" value = "" maxlength = "5" />
+Name: <input type = "text" name = "full_name" pattern="[a-zA-Z]{5,}" title="Please enter more than 5 characters"/>
 &nbsp;
 &nbsp;
 Gender:
 <input type="radio"
-               name="Male" 
+               name="gender" 
                value="Male">Male
                 <input type="radio"
-               name="Female" 
+               name="gender" 
                value="Female">Female
                &nbsp;
                &nbsp;
 
                Age:<input type="number" id="quantity" name="quantity" min="0" max="100">
+
+               <br>
+               <br>
+               <br>
+               <input type="submit" value="submit">
         </center>
     </form>
 </body>

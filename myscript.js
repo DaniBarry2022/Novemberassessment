@@ -1,1 +1,1 @@
-<script src="myscripts.js"></script>
+document.getElementById("").maxLength = "5";
