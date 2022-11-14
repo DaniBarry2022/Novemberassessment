@@ -1,4 +1,4 @@
 body{
-    background-image: url("img_tree.gif"), url("paper.gif");
-    background-color: royalblue;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+    url(""C:\Users\dkp\Desktop\SALESFORCE\Novemberassessment\aircraft.jpg"");
 }
